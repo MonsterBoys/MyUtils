@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <com.lock.lifesensexu.myapputils.viewPagerModels.ColorTrackView
+            android:id="@+id/id_tab_01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:progress="1"
+            app:text="Content1"
+            app:text_change_color="#FF11E70D"
+            app:text_origin_color="#ff3300"
+            app:text_size="18sp" />
+
+        <com.lock.lifesensexu.myapputils.viewPagerModels.ColorTrackView
+            android:id="@+id/id_tab_02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:progress="1"
+            app:text="Content1"
+            app:text_change_color="#FF11E70D"
+            app:text_origin_color="#ff3300"
+            app:text_size="18sp" />
+
+        <com.lock.lifesensexu.myapputils.viewPagerModels.ColorTrackView
+            android:id="@+id/id_tab_03"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:progress="1"
+            app:text="Content1"
+            app:text_change_color="#FF11E70D"
+            app:text_origin_color="#ff3300"
+            app:text_size="18sp" />
+
+
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></android.support.v4.view.ViewPager>
+</LinearLayout>
