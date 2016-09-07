@@ -17,4 +17,8 @@
     <color name="main_pull_deep">#2ECDE3</color>
     <color name="main_pull_light">#93D4E7</color>
     <color name="group_headbackground">#071b52</color>
+    <color name="group_line">#e9e9e9</color>
+    <color name="login_bg_color">#E9E9E9</color>
+    <color name="target_blue">#1EABE1</color>
+    <color name="text_weak_colorb">#7f696969</color>
 </resources>
