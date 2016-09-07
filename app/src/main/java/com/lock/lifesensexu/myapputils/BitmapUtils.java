@@ -129,6 +129,17 @@ public class BitmapUtils {
         bkg = FastBlur.doBlur(bkg, radius, false);
         return bkg;
     }
+    /**
+     * 生成默认的告诉模糊效果图
+     *
+     * @param bkg
+     * @return
+     */
+    public static Bitmap blur(Bitmap bkg) {
+        bkg = small(bkg);
+        bkg = FastBlur.doBlur(bkg, 5, false);
+        return bkg;
+    }
 
     /**
      * 压缩成只有1*1的

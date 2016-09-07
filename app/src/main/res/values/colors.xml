@@ -21,4 +21,5 @@
     <color name="login_bg_color">#E9E9E9</color>
     <color name="target_blue">#1EABE1</color>
     <color name="text_weak_colorb">#7f696969</color>
+    <color name="text_weak_color2">#d3d3d3</color>
 </resources>
