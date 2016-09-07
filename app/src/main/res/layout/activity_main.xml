@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="com.lock.lifesensexu.myapputils.MainActivity">
 
@@ -42,6 +43,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_marginTop="20dp">
 
         <Button
@@ -54,5 +56,13 @@
             android:gravity="center"
             android:textColor="@drawable/selector_text_white_black"
             android:text="登录" />
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:layout_width="150dp"
+           android:id="@+id/yourCircularProgressbar"
+            android:layout_height="150dp"
+            app:cpb_background_progressbar_color="#FFCDD2"
+            app:cpb_background_progressbar_width="5dp"
+            app:cpb_progressbar_color="#F44336"
+            app:cpb_progressbar_width="10dp"  />
     </LinearLayout>
 </LinearLayout>

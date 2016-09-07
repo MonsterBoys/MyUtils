@@ -3,7 +3,9 @@ package com.lock.lifesensexu.myapputils.DialogUtils;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -111,6 +113,21 @@ public class DialogUtil {
         });
         dialog.show();
 
+    }
+    /**
+     * @param context
+     * @param isCancelable 设置为false，按返回键不能退出。默认为true。
+     */
+    public void showProcessDialog(Context context, boolean isCancelable, int layoutId) {
+        dismissProcessDialog();
+        Resources resources = context.getResources();
+        DisplayMetrics dm = resources.getDisplayMetrics();
+        int w = (int) (dm.widthPixels * 0.5);
+        int h = (int) (dm.heightPixels * 0.2);
+//        dialog = new CustomDialog(context, w, h, R.layout.dialog_hint_loading);
+        dialog = CustomDialog.createStandardDialog(context, layoutId);
+        dialog.setCancelable(isCancelable);
+        dialog.show();
     }
     public void dismissProcessDialog() {
         Log.e("Dialog ", "dismissProcessDialog");
